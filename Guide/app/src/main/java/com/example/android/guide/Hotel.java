@@ -13,17 +13,19 @@ public class Hotel extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_hotel);
+
         ArrayList<tour> tours=new ArrayList<tour>();
-        tours.add(new tour("Barbeque Nation",R.drawable.bbq));
-        tours.add(new tour("Flame and Grills",R.drawable.fg));
-        tours.add(new tour("MainLand China",R.drawable.mc));
-        tours.add(new tour("Chili's",R.drawable.c));
+        tours.add(new tour("J W Marriot",R.drawable.jw));
+        tours.add(new tour("Sonarbangla",R.drawable.s));
+        tours.add(new tour("Novotel",R.drawable.novo));
+        tours.add(new tour("Taj Bengal",R.drawable.tb));
 
         RestraurantAdapter itemAdapter= new RestraurantAdapter(this,tours);
 
-        ListView listView=(ListView) findViewById(R.id.restraurant);
+        ListView listView=(ListView) findViewById(R.id.hotel);
 
-        listView.setAdapter((ListAdapter) itemAdapter);
+        listView.setAdapter(itemAdapter);
+
 
     }
 }

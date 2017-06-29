@@ -27,16 +27,16 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view){
                 Intent resintent = new Intent(MainActivity.this,Restraurant.class);
                 startActivity(resintent);
-                Toast.makeText(MainActivity.this,"Sorted as far ratings",Toast.LENGTH_LONG).show();
+                Toast.makeText(MainActivity.this,"Sorted as far best ratings",Toast.LENGTH_LONG).show();
             }
         });
-        TextView hotel=(TextView)findViewById(R.id.hot);
-        hotel.setOnClickListener(new View.OnClickListener(){
+        TextView hot=(TextView)findViewById(R.id.hot);
+        hot.setOnClickListener(new View.OnClickListener(){
 
             public void onClick(View view){
                 Intent resintent = new Intent(MainActivity.this,Hotel.class);
                 startActivity(resintent);
-                Toast.makeText(MainActivity.this,"Sorted as far ratings",Toast.LENGTH_LONG).show();
+                Toast.makeText(MainActivity.this,"Sorted as far best ratings",Toast.LENGTH_LONG).show();
             }
         });
         TextView cafe=(TextView)findViewById(R.id.cafe);
@@ -45,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view){
                 Intent resintent = new Intent(MainActivity.this,Cafe.class);
                 startActivity(resintent);
-                Toast.makeText(MainActivity.this,"Sorted as far ratings",Toast.LENGTH_LONG).show();
+                Toast.makeText(MainActivity.this,"Sorted as far best ratings",Toast.LENGTH_LONG).show();
             }
         });
         TextView bar=(TextView)findViewById(R.id.bar);
@@ -57,6 +57,9 @@ public class MainActivity extends AppCompatActivity {
                 Toast.makeText(MainActivity.this,"Sorted as far ratings",Toast.LENGTH_LONG).show();
             }
         });
+
+
+
 
     }
 

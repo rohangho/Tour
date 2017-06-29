@@ -24,7 +24,7 @@ public class Restraurant extends AppCompatActivity {
 
         ListView listView=(ListView) findViewById(R.id.restraurant);
 
-        listView.setAdapter((ListAdapter) itemAdapter);
+        listView.setAdapter(itemAdapter);
 
 
     }

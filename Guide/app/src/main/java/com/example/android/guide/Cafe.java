@@ -14,17 +14,18 @@ public class Cafe extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cafe);
 
-
         ArrayList<tour> tours=new ArrayList<tour>();
-        tours.add(new tour("Barbeque Nation",R.drawable.bbq));
-        tours.add(new tour("Flame and Grills",R.drawable.fg));
-        tours.add(new tour("MainLand China",R.drawable.mc));
-        tours.add(new tour("Chili's",R.drawable.c));
+        tours.add(new tour("Flury",R.drawable.flu));
+        tours.add(new tour("Cafe Coffee Day",R.drawable.ccd));
+        tours.add(new tour("Bon Apetite",R.drawable.ba));
+        tours.add(new tour("Wise Owl",R.drawable.wo));
 
         RestraurantAdapter itemAdapter= new RestraurantAdapter(this,tours);
 
-        ListView listView=(ListView) findViewById(R.id.restraurant);
+        ListView listView=(ListView) findViewById(R.id.cafe);
 
-        listView.setAdapter((ListAdapter) itemAdapter);
+        listView.setAdapter(itemAdapter);
+
+
     }
 }

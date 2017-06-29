@@ -13,17 +13,19 @@ public class Bar extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bar);
+
         ArrayList<tour> tours=new ArrayList<tour>();
-        tours.add(new tour("Barbeque Nation",R.drawable.bbq));
-        tours.add(new tour("Flame and Grills",R.drawable.fg));
-        tours.add(new tour("MainLand China",R.drawable.mc));
-        tours.add(new tour("Chili's",R.drawable.c));
+        tours.add(new tour("Hoppipola",R.drawable.hop));
+        tours.add(new tour("Opium",R.drawable.op));
+        tours.add(new tour("Xrong Place",R.drawable.xp));
+        tours.add(new tour("10 Downing Street",R.drawable.down));
 
         RestraurantAdapter itemAdapter= new RestraurantAdapter(this,tours);
 
-        ListView listView=(ListView) findViewById(R.id.restraurant);
+        ListView listView=(ListView) findViewById(R.id.bar);
 
-        listView.setAdapter((ListAdapter) itemAdapter);
+        listView.setAdapter(itemAdapter);
+
 
     }
 }

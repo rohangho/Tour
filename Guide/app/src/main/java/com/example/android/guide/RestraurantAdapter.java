@@ -5,6 +5,8 @@ import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ArrayAdapter;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.util.ArrayList;
@@ -16,7 +18,7 @@ import static java.security.AccessController.getContext;
  * Created by ROHAN on 29-06-2017.
  */
 
-public class RestraurantAdapter extends ArrayList<tour> {
+public class RestraurantAdapter extends ArrayAdapter<tour> {
 
     public RestraurantAdapter(Activity context, ArrayList<tour>tours ){
         super(context,0,tours);
@@ -29,10 +31,15 @@ public class RestraurantAdapter extends ArrayList<tour> {
                     R.layout.list_item, parent, false);
         }
 
-        tour current = get(position);
+        tour current = getItem(position);
         TextView nameTextView = (TextView) listView.findViewById(R.id.name_of_restraurant);
 
         nameTextView.setText(current.getresname());
+
+        ImageView image=(ImageView) listView.findViewById(R.id.image);
+        image.setImageResource(current.getimg());
+
+
 
         return listView;
     }
