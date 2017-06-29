@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Tour Guide</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="track">Track My Location</string>
+    <string name="manual">Set Location Manually</string>
+    <string name="web">rohanghosh.tk<a href="www.rohanghosh.tk"></a>/</string>
+    <string name="drawer_open">drawer open</string>
+    <string name="drawer_close">drawer close</string>
+
+</resources>
