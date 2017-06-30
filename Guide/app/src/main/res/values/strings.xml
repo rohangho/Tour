@@ -7,5 +7,25 @@
     <string name="web">rohanghosh.tk<a href="www.rohanghosh.tk"></a>/</string>
     <string name="drawer_open">drawer open</string>
     <string name="drawer_close">drawer close</string>
-
+    <string name="cafe">Cafe</string>
+    <string name="bar">Bar</string>
+    <string name="hotel">Hotel</string>
+    <string name="res">Restraurant</string>
+    <string name="Sort">Sorted as far best rating</string>
+    <string name="bbq">Barbeque Nation</string>
+    <string name="fg">Flame and Grills</string>
+    <string name="main">Mainland China</string>
+    <string name="chili">Chili's</string>
+    <string name="hip">Hoppipola</string>
+    <string name="op">Opium</string>
+    <string name="xr">Xrong Place</string>
+    <string name="down">10 Downing Street</string>
+    <string name="flu">Flury</string>
+    <string name="ccd">Cafe Coffee Day</string>
+    <string name="bon">Bon Apetite</string>
+    <string name="owl">Wise Owl</string>
+    <string name="jw">J W Marriot</string>
+    <string name="itc">Sonarbangla</string>
+    <string name="novo">Novotel</string>
+    <string name="bengal">Taj Bengal</string>
 </resources>

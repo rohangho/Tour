@@ -13,19 +13,13 @@ public class Cafe extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cafe);
-
         ArrayList<tour> tours=new ArrayList<tour>();
-        tours.add(new tour("Flury",R.drawable.flu));
-        tours.add(new tour("Cafe Coffee Day",R.drawable.ccd));
-        tours.add(new tour("Bon Apetite",R.drawable.ba));
-        tours.add(new tour("Wise Owl",R.drawable.wo));
-
+        tours.add(new tour(getString(R.string.flu),R.drawable.flu));
+        tours.add(new tour(getString(R.string.ccd),R.drawable.ccd));
+        tours.add(new tour(getString(R.string.bon),R.drawable.ba));
+        tours.add(new tour(getString(R.string.owl),R.drawable.wo));
         RestraurantAdapter itemAdapter= new RestraurantAdapter(this,tours);
-
         ListView listView=(ListView) findViewById(R.id.cafe);
-
         listView.setAdapter(itemAdapter);
-
-
     }
 }

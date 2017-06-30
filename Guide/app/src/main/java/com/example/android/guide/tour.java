@@ -8,17 +8,20 @@ public class tour {
 
     private String name_of_res;
 
-    private  int  pointer_of_image;
+    private int pointer_of_image;
 
-    public tour(String name, int pointer){
-        pointer_of_image=pointer;
-        name_of_res=name;
+    public tour(String name, int pointer) {
+        pointer_of_image = pointer;
+        name_of_res = name;
     }
 
-    public String getresname(){return name_of_res;}
+    public String getresname() {
+        return name_of_res;
+    }
 
-    public int getimg(){return pointer_of_image;}
-
+    public int getimg() {
+        return pointer_of_image;
+    }
 
 
 }

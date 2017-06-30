@@ -19,7 +19,7 @@
         <TextView
             android:id="@+id/restaura"
             style="@style/category"
-            android:text="Restraurant"
+            android:text="@string/res"
             android:textSize="@dimen/textsize"
             android:textStyle="italic"
             android:textColor="@color/text"
@@ -28,7 +28,7 @@
         <TextView
             android:id="@+id/hot"
             style="@style/category"
-            android:text="Hotels"
+            android:text="@string/hotel"
             android:textSize="@dimen/textsize"
             android:textStyle="italic"
             android:textColor="@color/text"
@@ -36,7 +36,7 @@
         <TextView
             android:id="@+id/cafe"
             style="@style/category"
-            android:text="Cafe"
+            android:text="@string/cafe"
             android:textSize="@dimen/textsize"
             android:textStyle="italic"
             android:textColor="@color/text"
@@ -45,13 +45,11 @@
         <TextView
             android:id="@+id/bar"
             style="@style/category"
-            android:text="Bar"
+            android:text="@string/bar"
             android:textSize="@dimen/textsize"
             android:textStyle="italic"
             android:textColor="@color/text"
             android:background="@drawable/bar"/>
-        
-        
     </LinearLayout>
     </ScrollView>
 

@@ -7,25 +7,21 @@ import android.widget.ListView;
 
 import java.util.ArrayList;
 
+import static com.example.android.guide.R.drawable.s;
+
 public class Restraurant extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_restraurant);
-
         ArrayList<tour> tours=new ArrayList<tour>();
-        tours.add(new tour("Barbeque Nation",R.drawable.bbq));
-        tours.add(new tour("Flame and Grills",R.drawable.fg));
-        tours.add(new tour("MainLand China",R.drawable.mc));
-        tours.add(new tour("Chili's",R.drawable.c));
-
-       RestraurantAdapter itemAdapter= new RestraurantAdapter(this,tours);
-
+        tours.add(new tour(getString(R.string.bbq),R.drawable.bbq));
+        tours.add(new tour(getString(R.string.fg),R.drawable.fg));
+        tours.add(new tour(getString(R.string.main),R.drawable.mc));
+        tours.add(new tour(getString(R.string.chili),R.drawable.c));
+        RestraurantAdapter itemAdapter= new RestraurantAdapter(this,tours);
         ListView listView=(ListView) findViewById(R.id.restraurant);
-
         listView.setAdapter(itemAdapter);
-
-
     }
-}
+ }
