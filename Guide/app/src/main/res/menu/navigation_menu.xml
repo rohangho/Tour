@@ -3,16 +3,16 @@
 
     <item android:id="@+id/navigation_track"
         android:title="@string/track"
-        android:icon="@drawable/track"/>
+        />
     <item android:id="@+id/navigation_manually"
         android:title="@string/manual"/>
     <item android:id="@+id/share"
         android:title="Share Location on Facebook"
         android:icon="@drawable/fb"/>
     <item android:id="@+id/tweet"
-        android:icon="@drawable/tweet"
+
         android:title="Tweet"/>
     <item android:id="@+id/logout"
         android:title="Log Out"
-        android:icon="@drawable/log"/>
+        />
 </menu>
